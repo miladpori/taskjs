@@ -1,0 +1,195 @@
+.main{
+    width: 100%;
+    height: 100%;
+}
+
+/* .container{
+    background-color: red;
+    height: 500px;
+} */
+body{
+    font-size: .8rem;
+}
+
+input{
+    border-radius: 10px;
+    border: 1px solid rgb(219, 219, 219) !important;
+}
+
+.alert{
+    margin: 20px 0;
+    /* height: 0px; */
+    background-color: rgb(235, 14, 87);
+    border-radius: 10px;
+    /* animation: alertClear alternate backwards 1s ; */
+}
+
+@keyframes alert {
+    from {
+
+        height: 0px;
+    } to {
+        height: 50px;
+
+    }
+}
+
+@keyframes alertClear {
+    from {
+
+        height: 50px;
+    } to {
+        height: 0px;
+
+    }
+}
+.alert span{
+    display: block;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    width: 100%;
+    height: 100%;
+}
+
+.add-question{
+    margin-top: 10px;
+    background-color: rgb(238, 238, 238);
+    padding: 20px;
+    border-radius: 10px;
+    box-sizing: border-box;
+}
+.aq-form form{
+    width: 100%;
+    box-sizing: border-box;
+}
+.aq-input{
+    width: 100%;
+    box-sizing: border-box;
+}
+
+
+.aqf-table table , .formtable table{
+    width: 100%;
+    margin-top: 10px;
+    border: 1px solid #dbdbdb;
+}
+
+.aqf-table table tr , .formtable table tr{
+    background-color: #dbdbdb;
+}
+
+.aqf-table table tr th , .formtable table tr th{
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+.aqf-table table td , .formtable table td{
+    padding: 10px;
+}
+
+.aqf-add-form a{ 
+    background-color: #334466;
+    padding: 10px 60px;
+    border-radius: 5px;
+    width: 200px;
+    color: white;
+}
+
+.middle{
+    background-color: #EEEEEE;
+    padding: 20px;
+    box-sizing: border-box;
+    border-radius: 10px;
+    margin-top: 10px;
+}
+
+.msi-box{
+    padding: 10px;
+    box-sizing: border-box;
+    margin-top: 15px;
+    background-color: #DBDBDB;
+    border-radius: 10px;
+}
+
+.msi-item{
+    display: flex;
+}
+
+.msi-ans{
+    width: 200px;
+}
+.msi-textarea{
+    border-radius: 10px;
+    background-color: rgb(236, 236, 236);
+}
+.msi-textarea textarea{
+    width: 300px;
+    border-radius: 10px;
+}
+
+.tx-p {
+    padding: 10px;
+}
+.formtable{
+    padding: 20px;
+    margin-top: 10px;
+    border-radius: 10px;
+    box-sizing: border-box;
+    background-color: #EEEEEE;
+}
+
+.ms-item{
+    padding: 5px;
+    margin-top: 10px;
+    border-radius: 10px;
+    background-color: rgb(255, 255, 255);
+}
+
+.td-item .padding-10{
+    background-color: rgb(255, 255, 255);
+    margin: 5px;
+    border-radius: 5px;
+}
+
+.td-item .select{
+    padding: 0 20px;
+    border-radius: 5px;
+}
+
+.nopad{
+    padding: 0 !important;
+}
+
+.selList{
+
+    /* height: 100%; */
+    /* background-color: red; */
+    padding: 10px;
+}
+
+
+.selList a{
+    font-size: .7rem;
+    padding: 5px;
+    border: 1px solid rgb(148, 148, 148);
+    border-radius: 5px;
+    margin-right: 5px;
+    box-sizing: border-box;
+}
+
+.form_save{
+    width: 100%;
+    display: flex;
+    justify-content: end;
+    box-sizing: border-box;
+    margin-top: 20px;
+}
+
+.form_save a{
+    background-color: rgb(0, 140, 255);
+    padding: 10px 30px;
+    border-radius: 10px;
+    color: white;
+}

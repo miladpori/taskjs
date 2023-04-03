@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="./css/mycss2.0.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>JS_task</title>
+</head>
+
+<body>
+
+
+    <div class="main">
+        <div class="container">
+
+            <div class="alert">
+                <span></span>
+            </div>
+
+            <div class="add-question">
+                <div class="aq-title mb-15">
+                    <span>افزودن</span>
+                </div>
+
+                <div class="aq-form">
+                    <form action="POST" id="q_form">
+                        <input class="aq-input" type="text" name="q_name" id="aq-input" placeholder="سوال خود را وارد نمایید ">
+
+                        <div class="single-multi-select padding-10">
+                            <!-- <input type="checkbox"> چند انتخابی -->
+                        </div>
+
+                        <div class="aqf-table">
+                            <table id="aqf_tab">
+                                <thead>
+                                    <tr>
+                                        <th>#</th>
+                                        <th>عنوان</th>
+                                        <th>توضیحات</th>
+                                        <th><a class="fc-blue" id="add_qustion" href="">افزودن +</a></th>
+                                    </tr>
+                                </thead>
+
+                                <tbody class="t-body">
+                                    <tr class="blosh">
+                                        <td>1</td>
+                                        <td><input class="aq-titles" data-check="checkbox1"type="text" name="answer1" placeholder="عنوان را وارد نمایید "></td>
+                                        <td><input class="checkbox" type="checkbox" name="checkbox1" value="checkbox1"></td>
+                                        <td>----</td>
+                                    </tr>
+                                    
+                                </tbody>
+
+
+                            </table>
+                        </div>
+
+                        <div class="aqf-add-form text-al mt-15">
+                            <!-- <a class="add-q" href="">افزودن</a> -->
+                            <input type="submit" value="افزودن">
+                        </div>
+                    </form>
+                </div>
+            </div>
+
+
+            <div class="formtable none">
+                <div class="middle-title">
+                    <span>فرم جدولی </span>
+                </div>
+
+            <table>
+                <thead>
+                    <tr>
+                        <th>ردیف</th>
+                        <th> سوال شماره</th>
+                        <th>عملیات</th>
+                        <th>عنوان سوال</th>
+                        <th>پاسخ و سوال مرتبط</th>
+                    </tr>
+                </thead>
+
+                <tbody class="form_tbody">
+                    <!-- <tr>
+                        <td>1</td>
+                        <td>سوال 0</td>
+                        <td>%</td>
+                        <td>آیا مشتری پاسخکوی تماس بوده اند</td>
+                        <td class="nopad">
+                            <div class="td-item flex">
+                                <div class="tdi-first padding-10 ">1</div>
+                                <div class="tdi-middle padding-10">بلی</div>
+                                <div class="tdi-last padding-10">
+                                    <label class="pl-10" for="">سوال مرتبط</label>
+                                    <select class="all_select"  name="" id="" class="select">
+                                        <option value="">انتخاب کنید</option>
+                                        <option value="">سوال یک</option>
+                                    </select>
+                                </div>
+                            </div>
+
+                            <div class="td-item flex">
+                                <div class="tdi-first padding-10 ">1</div>
+                                <div class="tdi-middle padding-10">بلی</div>
+                                <div class="tdi-last padding-10">
+                                    <label class="pl-10" for="">سوال مرتبط</label>
+                                    <select class="all_select"   name="" id="" class="select">
+                                        <option value="">انتخاب کنید</option>
+                                        <option value="">سوال یک</option>
+                                    </select>
+                                </div>
+                                <div class="selList core">
+                                    <ul>
+                                        <li><a href="">سوال یک <i class="bx bx-trash"></i></a></i></li>
+                                        <li><a href="">سوال یک <i class="bx bx-trash"></i></a></li>
+
+                                    </ul>
+                                </div>
+                            </div>
+                        </td>
+                    </tr> -->
+                </tbody>
+            </table>
+        </div>
+
+            <div class="middle none">
+                <div class="middle-title">
+                    <span>فرم نمایشی</span>
+                </div>
+
+                <div class="middle-show">
+                    <!-- <div class="ms-item">
+                        <div class="msi-title">
+                            <span>آیا مشتری پاسخکوی تماس بوده است</span>
+                        </div>
+                        <div class="msi-box">
+                            <div class="msi-item">
+                                <div class="msi-ans">
+                                    <div class="msi-radio">
+                                        <span>بلی</span>
+                                        <input class="rrr" data-f="" type="radio" name="one">
+                                    </div>
+                                    <div class="msi-radio">
+                                        <span>خیر</span>
+                                        <input class="rrr" data-f="" type="radio" name="one">
+                                    </div>
+                                </div>
+                                <div class="msi-textarea">
+                                    <div>
+                                        <span class="block">توضیحات</span>
+                                        <textarea name="" id=""></textarea>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div> -->
+
+                    
+                </div>
+                <div class="form_save">
+                    <a id="save_form" href="">ذخیره فرم</a>
+                </div>
+            </div>
+
+            
+
+
+        </div>
+    </div>
+
+
+    <script src="./js/script.js"></script>
+
+</body>
+
+</html>
